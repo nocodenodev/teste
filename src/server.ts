@@ -20,7 +20,9 @@ import fastifyStatic from "@fastify/static";
 import path from "path";
 import { getAtualUser } from "./routes/users/get-user-data";
 
-const app = fastify();
+const app = fastify({
+  logger: true 
+});
 
 app.register(fastifyStatic, {
   root: path.join(__dirname, "..", "public"),
