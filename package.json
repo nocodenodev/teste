@@ -1,0 +1,39 @@
+{
+  "name": "site-sistema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nocodenodev/site-sistema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nocodenodev/site-sistema/issues"
+  },
+  "homepage": "https://github.com/nocodenodev/site-sistema#readme",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.14.2",
+    "prisma": "^6.9.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/jwt": "^9.1.0",
+    "@fastify/static": "^8.2.0",
+    "@prisma/client": "^6.9.0",
+    "bcrypt": "^6.0.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "fastify": "^5.3.3",
+    "fastify-type-provider-zod": "^4.0.2",
+    "zod": "^3.25.56"
+  }
+}
